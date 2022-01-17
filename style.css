@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+/* Parte de cima */
+#container {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+}
+#direita {
+  background-color: #328CC1;
+  flex: 1;
+  display: flex;
+}
+#esquerda {
+  background-color: #1D2731;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+img {
+  width: 250px;
+  height: auto;
+}
+.profissao {
+  margin: 10px 0px;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.nome {
+  font-size: 18px;
+}
+.redes{
+  margin: 10px 10px;
+}
+.git {
+  width: 20px;
+}
+.linkedin {
+  width: 20px;
+}
+
+/* Parte de baixo */
+.container-baixo {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+}
+#experi {
+  position: absolute;
+  top: 110vh;
+  font-size: 30px;
+}
+hr {
+  height: 300px;
+}
+#direita-baixo {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+}
+h2 {
+  margin: 20px 0px;
+  text-transform: capitalize;
+  font-size: large;
+}
+.html, .css, .js {
+  width: 200px;
+  height: 150px;
+}
+#meio-baixo {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+}
+#esquerda-baixo {
+  flex-flow: column wrap;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
