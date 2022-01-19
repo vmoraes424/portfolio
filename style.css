@@ -2,18 +2,32 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
+
+.todo {
+  height: 100%;
+}
+
 /* Parte de cima */
 #container {
   display: flex;
   height: 100vh;
   justify-content: space-between;
 }
+
 #direita {
   background-color: #328CC1;
   flex: 1;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+#direita h1 {
+  font-size: 30px;
+}
+
 #esquerda {
   background-color: #1D2731;
   flex: 1;
@@ -21,45 +35,91 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  color: white;
 }
 img {
   width: 250px;
   height: auto;
-}
-.profissao {
   margin: 10px 0px;
+}
+
+.profissao {
+  margin: 20px 0px;
   letter-spacing: 2px;
   font-size: 20px;
 }
+
 .nome {
   font-size: 18px;
 }
-.redes{
+
+.redes {
   margin: 10px 10px;
 }
+
 .git {
   width: 20px;
 }
+
 .linkedin {
   width: 20px;
 }
 
-/* Parte de baixo */
+.wrapper {
+  text-align: center;
+  display: flex;
+  width: 400px;
+}
+
+.saibamais {
+  background-color: peru;
+  text-decoration: none;
+  color: black;
+  flex: 1;
+  width: 200px;
+  height: 50px;
+  margin: 0px 10px;
+}
+
+.mecontrate {
+  height: 50px;
+  color: black;
+  text-decoration: none;
+  width: 200px;
+  margin: 0px 10px;
+  flex: 1;
+  background-color: pink;
+}
+
+.mecontrate p, .saibamais p {
+  top: 15px;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+/* Parte do meio */
 .container-baixo {
   display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
-
 }
+
 #experi {
   position: absolute;
   top: 110vh;
   font-size: 30px;
+  text-align: center;
 }
+
+#experi p {
+  font-size: 10px;
+}
+
 hr {
   height: 300px;
 }
+
 #direita-baixo {
   flex: 1;
   justify-content: center;
@@ -67,15 +127,18 @@ hr {
   display: flex;
   flex-flow: column wrap;
 }
+
 h2 {
   margin: 20px 0px;
   text-transform: capitalize;
   font-size: large;
 }
+
 .html, .css, .js {
   width: 200px;
   height: 150px;
 }
+
 #meio-baixo {
   flex: 1;
   justify-content: center;
@@ -83,10 +146,63 @@ h2 {
   display: flex;
   flex-flow: column wrap;
 }
+
 #esquerda-baixo {
   flex-flow: column wrap;
   flex: 1;
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+/* Parte final */
+.container-ultimo {
+  height: 100vh;
+  background-color: thistle;
+  display: flex;
+}
+
+.ultimo-esquerda {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  background-color: tomato;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.ultimo-esquerda p {
+  font-size: 20px;
+}
+
+.ultimo-direita {
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.ultimo-direita p {
+  font-size: 20px;
+}
+
+/* Footer */
+footer {
+  position: static;
+  background-color: #1D2731;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 400px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+footer p {
+  position: relative;
+  bottom: 10px;
 }
