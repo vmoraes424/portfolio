@@ -3,16 +3,18 @@
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 .todo {
   height: 100%;
+  max-width: 100%;
 }
 
 /* Parte de cima */
 #container {
   display: flex;
-  height: 100vh;
+  height: 90vh;
   justify-content: space-between;
 }
 
@@ -81,7 +83,10 @@
   height: 50px;
   margin: 0px 10px;
   border-radius: 10px;
-  box-shadow: 0 0 0.1em black;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+.saibamais:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
 
 .mecontrate {
@@ -99,38 +104,65 @@
   letter-spacing: 1px;
   position: relative;
 }
-/* Segunda parte */
+/* Sobre mim */
 
 #segundo {
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 #segundo h1 {
-  position: relative;
-  top: 100px;
+  position: absolute;
+  top: 105vh;
   font-size: 50px;
 }
+.segundo-esquerdo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.segundo-direto {
+  background-color: blue;
+  flex: 1;
+}
+.container-texto {
+  display: flex;
+  position: relative;
+  width: 300px;
+  height: auto;
+  flex-flow: column wrap;
+  background-color: white;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+.container-texto p {
+  font-size: 20px;
+  padding: 20px;
+}
 
-/* Parte do meio */
+.container-texto:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Experiência */
 .container-baixo {
   display: flex;
-  height: 100vh;
+  height: 80vh;
   justify-content: center;
   align-items: center;
 }
 
 #experi {
   position: absolute;
-  top: 210vh;
+  top: 195vh;
   font-size: 30px;
   text-align: center;
 }
 
 #experi p {
-  font-size: 10px;
+  font-size: 15px;
 }
 
 hr {
@@ -175,7 +207,7 @@ h2 {
 /* Parte final */
 .container-ultimo {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
-  height: 100vh;
+  height: 70vh;
   display: flex;
 }
 
